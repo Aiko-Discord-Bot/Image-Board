@@ -5,36 +5,36 @@ app = FastAPI()
 
 character = {
     1: {
-        "name" : "Diluc",
+        "name" : ["Diluc","diluc"],
         "url" : "https://s1.zerochan.net/Diluc.Ragnvindr.600.3129744.jpg",
     },
     2: {
-        "name": "",
-        "url": "",
+        "name": ["Zoro","zoro","Roronoa Zoro"],
+        "url": "https://static.zerochan.net/Roronoa.Zoro.full.2612542.jpg",
     },
     3: {
-        "name": "",
-        "url": "",
+        "name": ["Vinsmoke Sanji","Sanji","sanji"],
+        "url": "https://s1.zerochan.net/Vinsmoke.Sanji.600.2612514.jpg",
     },
      4: {
-        "name": "",
-        "url": "",
+        "name": ["Hinata Shouyou"],
+        "url": "https://s1.zerochan.net/Hinata.Shouyou.600.3019161.jpg",
     },
      5: {
-        "name": "",
-        "url": "",
+        "name": ["Kiryuu Setsuna","Kiryuu","kiryuu"],
+        "url": "https://s1.zerochan.net/Kiryuu.Setsuna.600.3077361.jpg",
     },
      6: {
-        "name": "",
-        "url": "",
+        "name": ["Chevreuse","chevreuse"],
+        "url": "https://s3.zerochan.net/240/43/26/4111343.avif",
     },
      7: {
-        "name": "",
-        "url": "",
+        "name": ["Daki","daki"],
+        "url": "https://s1.zerochan.net/Daki.600.3575693.jpg",
     },
      8: {
-        "name": "",
-        "url": "",
+        "name": ["Haganezuka Hotaru","haganezuka","haganezuka hotaru"],
+        "url": "https://static.zerochan.net/Haganezuka.Hotaru.full.2668005.png",
     },
      9: {
         "name": "",
