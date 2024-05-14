@@ -26,7 +26,7 @@ character = {
     },
      6: {
         "name": ["Chevreuse","chevreuse"],
-        "url": "https://s3.zerochan.net/240/43/26/4111343.avif",
+        "url": "https://s3.zerochan.net/240/43/26/4111343.avif", #this format is not showing in dc vro
     },
      7: {
         "name": ["Daki","daki"],
@@ -37,8 +37,8 @@ character = {
         "url": "https://static.zerochan.net/Haganezuka.Hotaru.full.2668005.png",
     },
      9: {
-        "name": "",
-        "url": "",
+        "name": "Rem",
+        "url": "https://static.zerochan.net/Rem.%28Re%3AZero%29.full.3135217.png",
     },
      10: {
         "name": "",
