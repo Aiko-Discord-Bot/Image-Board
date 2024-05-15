@@ -37,8 +37,8 @@ character = {
         "url": "https://static.zerochan.net/Haganezuka.Hotaru.full.2668005.png",
     },
      9: {
-        "name": "Rem",
-        "url": "https://static.zerochan.net/Rem.%28Re%3AZero%29.full.3135217.png",
+        "name": ["Rem","rem"],
+        "url": "https://s1.zerochan.net/Rem.%28DEATH.NOTE%29.600.509974.jpg",
     },
      10: {
         "name": "",
