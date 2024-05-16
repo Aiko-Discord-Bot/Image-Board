@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image Link</title>
+</head>
+<body>
+    <h1>Upload Image Link</h1>
+    <form id="uploadForm" action="/upload" method="post">
+        <label for="image_url">Image URL:</label><br>
+        <input type="text" id="image_url" name="image_url"><br>
+        <label for="image_name">Image Name:</label><br>
+        <input type="text" id="image_name" name="image_name"><br><br>
+        <input type="submit" value="Upload">
+    </form>
+
+    <script>
+        document.getElementById('uploadForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData();
+            const imageUrlInput = document.getElementById('image_url');
+            const imageNameInput = document.getElementById('image_name');
+            formData.append('image_url', imageUrlInput.value);
+            formData.append('image_name', imageNameInput.value);
+            
+            try {
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+                console.log(data);
+                alert('Image link uploaded successfully!');
+            } catch (error) {
+                console.error('Error uploading image link:', error);
+                alert('Error uploading image link. Please try again.');
+            }
+        });
+    </script>
+</body>
+</html>
