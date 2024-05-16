@@ -3,10 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Image Link</title>
+    <title>Image Board</title>
+    <style>
+        body {
+            background-color: #222; /* Black background */
+            color: #fff; /* White text */
+            font-family: sans-serif; /* Clean font */
+            margin: 0; /* Remove default margin */
+            padding: 20px; /* Add some padding */
+            text-align: center; /* Center all elements */
+        }
+
+        h1 {
+            margin-bottom: 20px; /* Add some space after the heading */
+        }
+
+        form {
+            display: flex; /* Arrange form elements horizontally */
+            flex-direction: column; /* Stack elements vertically */
+            gap: 5px; /* Add spacing between form elements */
+        }
+
+        label {
+            font-weight: bold; /* Bold labels */
+        }
+
+        input[type="text"], input[type="submit"] {
+            padding: 5px 10px; /* Add padding to input fields and button */
+            border: 1px solid #ccc; /* Add a light border */
+            border-radius: 5px; /* Rounded corners */
+            background-color: #333; /* Dark background for inputs */
+            color: #fff; /* White text for inputs */
+        }
+
+        input[type="submit"] {
+            cursor: pointer; /* Indicate clickable button */
+            background-color: #4CAF50; /* Green for submit button */
+            color: black; /* Black text for submit button */
+            width: 65px;
+        
+        }
+    </style>
 </head>
 <body>
-    <h1>Upload Image Link</h1>
+    <center>
+    <h1>Image Board</h1>
     <form id="uploadForm" action="/upload" method="post">
         <label for="image_url">Image URL:</label><br>
         <input type="text" id="image_url" name="image_url"><br>

@@ -9,7 +9,7 @@ counter = 0
 
 @app.get("/", response_class=HTMLResponse)
 async def home():
-    with open("index.html", "r") as f:
+    with open("index.html","r") as f:
         html_content = f.read()
     return HTMLResponse(content=html_content, status_code=200)
 
